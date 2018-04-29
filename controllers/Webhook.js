@@ -7,13 +7,13 @@ module.exports = (req, res) => {
     console.log(contents);
     contents = JSON.parse(contents);
     contents.transactions.push({
-        "time": req.body.create_time,
+        //"time": req.body.create_time,
         fee,
         transactionAmount
     });
     console.log(JSON.stringify(contents));
-    fs.writeFileSync('./../data.json', JSON.stringify(contents));
+    fs.writeFileSync(__dirname + '/../data.json', JSON.stringify(contents));
 
 
-    res.json({})
+    // res.json({})
 }

@@ -9,6 +9,7 @@ module.exports = (req, res) => {
         fee,
         transactionAmount
     });
+    console.log(JSON.stringify(contents));
     fs.writeFileSync('../data.json', JSON.stringify(contents));
 
 

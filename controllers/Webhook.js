@@ -1,4 +1,4 @@
 module.exports = (req, res) => {
-    console.log("webhook called")
+    console.log(req);
     res.json({})
 }

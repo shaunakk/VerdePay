@@ -1,4 +1,4 @@
 module.exports = (req, res) => {
-    console.log(req);
+    console.log(req.resource.amount.total);
     res.json({})
 }

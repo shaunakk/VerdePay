@@ -18,5 +18,7 @@ module.exports = async (req, res) => {
     transactions.objects.forEach(value => {
         amount += Number(value.AMT) * 0.005;
     })
-    console.log(amount);
+    res.json({
+        transactions: transactions.objects
+    })
 }

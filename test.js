@@ -1,21 +1,3 @@
-const webhook = require('./controllers/Webhook');
+const list = require('./controllers/ListTransactions');
 
-webhook({
-    body: {
-        resource: {
-            amount: {
-                total: "0.49"
-            }
-        }
-    }
-}, 'poopy')
-
-webhook({
-    body: {
-        resource: {
-            amount: {
-                total: "0.50"
-            }
-        }
-    }
-}, 'poopy')
+list(1, 2)
